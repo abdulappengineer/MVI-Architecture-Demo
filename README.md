@@ -15,14 +15,15 @@ A **Jetpack Compose + MVI (Model-View-Intent) + Hilt + Retrofit** based Android 
 ### 1️⃣ Clone the repository
 git clone https://github.com/your-username/mvi-demo.git
 
-📂 Folder Breakdown
-Folder	Description
-di/	Hilt dependency injection setup
-data/	Handles API calls and data repository
-model/	Data models used in the app
-intent/	User intents (actions triggering state changes)
-ui/	Composable UI and ViewModel managing state
-MainActivity.kt	Entry point of the application
+## 📂 Folder Breakdown
+| Folder | Description |
+|--------|------------|
+| **di/** | Contains Hilt dependency injection setup for managing dependencies across the app. |
+| **data/** | Manages API calls, data sources, and repositories for handling business logic. |
+| **model/** | Defines data models used for API responses and local data representation. |
+| **intent/** | Represents user actions (intents) that trigger state changes in the MVI architecture. |
+| **ui/** | Contains UI-related components, including Composables and ViewModels for state management. |
+| **MainActivity.kt** | The entry point of the app where the UI is initialized. |
 
 
 Step 1:  Add Dependencies (build.gradle.kts)
