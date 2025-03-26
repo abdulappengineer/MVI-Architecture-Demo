@@ -17,7 +17,7 @@ import com.soha.infotech.mviarchitecturedemo.view.PostScreen
 import com.soha.infotech.mviarchitecturedemo.view.PostViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
-// Step 9: Setup Main Activity
+// Step 10: Setup Main Activity
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {

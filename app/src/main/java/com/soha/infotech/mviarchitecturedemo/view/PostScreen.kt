@@ -17,7 +17,7 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.soha.infotech.mviarchitecturedemo.intent.PostIntent
 
-// Step 8: Create UI Screen
+// Step 9: Create UI Screen
 
 @Composable
 fun PostScreen(viewModel: PostViewModel = hiltViewModel()) {

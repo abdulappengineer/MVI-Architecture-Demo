@@ -16,7 +16,7 @@ import kotlinx.coroutines.flow.onStart
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
-// Step 7: Create ViewModel
+// Step 8: Create ViewModel
 
 @HiltViewModel
 class PostViewModel @Inject constructor(private val repository: PostRepository) : ViewModel() {
