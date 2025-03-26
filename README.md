@@ -2,6 +2,7 @@
 
 A **Jetpack Compose + MVI (Model-View-Intent) + Hilt + Retrofit** based Android application demonstrating modern Android architecture.
 
+---
 
 ## 🔥 Tech Stack
 - **Kotlin** - Modern language for Android development  
@@ -9,11 +10,15 @@ A **Jetpack Compose + MVI (Model-View-Intent) + Hilt + Retrofit** based Android 
 - **MVI (Model-View-Intent)** - Unidirectional data flow architecture  
 - **Hilt** - Dependency Injection  
 - **Retrofit** - Networking  
-- **Coroutines & Flow** - Asynchronous programming  
+- **Coroutines & Flow** - Asynchronous programming
+
+  ---
 
 ## 🚀 Getting Started
 ### 1️⃣ Clone the repository
 git clone https://github.com/your-username/mvi-demo.git
+
+---
 
 ## 📂 Folder Breakdown
 | Folder | Description |
@@ -25,27 +30,48 @@ git clone https://github.com/your-username/mvi-demo.git
 | **ui/** | Contains UI-related components, including Composables and ViewModels for state management. |
 | **MainActivity.kt** | The entry point of the app where the UI is initialized. |
 
+---
 
-Step 1:  Add Dependencies (build.gradle.kts)
+## 🚀 Project Setup Guide
 
-Step 2: Create Data Model (Post.kt)
+Follow these steps to set up the MVI-based Jetpack Compose project.
 
-Step 3: Create API Service (ApiService.kt)
+### 1️⃣ Add Dependencies  
+- Open `build.gradle.kts` (Module-level) and add the required dependencies for **Hilt, Retrofit, Coroutines, and Jetpack Compose**.
+  
+### 2️⃣ Create Data Model  
+- Define a **Post** data model in `Post.kt` to represent API response data.
 
-Step 4: Setup Hilt (AppModule.kt)
+### 3️⃣ Create API Service  
+- Set up `ApiService.kt` using **Retrofit** to fetch posts from the API.
 
-Step 5: Create Repository (PostRepository.kt)
+### 4️⃣ Setup Hilt Dependency Injection  
+- Create `AppModule.kt` and provide necessary **network and repository dependencies** using Hilt.
 
-Step 6: Define MVI Intent (PostIntent.kt)
+### 5️⃣ Create Repository  
+- Implement `PostRepository.kt` to handle **data fetching and business logic**.
 
-Step 7: Define State (PostState.kt)
+### 6️⃣ Define MVI Intent  
+- Create `PostIntent.kt` to define **user actions (e.g., LoadPosts)** in the MVI pattern.
 
-Step 8: Create ViewModel (PostViewModel.kt)
+### 7️⃣ Define State  
+- Create `PostState.kt` to represent **different UI states (Loading, Success, Error)**.
 
-Step 9: Create UI Screen (PostScreen.kt)
+### 8️⃣ Create ViewModel  
+- Implement `PostViewModel.kt` to **handle intents and manage state** using Kotlin **Coroutines & Flow**.
 
-Step 10: Setup Main Activity (MainActivity.kt)
+### 9️⃣ Create UI Screen  
+- Design `PostScreen.kt` using **Jetpack Compose**, consuming state from `PostViewModel`.
 
+### 🔟 Setup Main Activity  
+- Modify `MainActivity.kt` to **set up the UI and initialize ViewModel**.
+
+---
+
+📌 **That's it!** Run the project and see MVI in action. 🚀  
+💡 **Need improvements?** Feel free to contribute!  
+
+---
 
 ### **✅ Why This Format?**
 - **Clear project structure** in a code block.
